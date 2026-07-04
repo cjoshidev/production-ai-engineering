@@ -2,60 +2,59 @@
 
 > **Building AI is easy. Operating AI in production is engineering.**
 
-An open-source handbook for building, observing, evaluating, and operating AI systems in production.
+An open-source project exploring how to build, observe, evaluate, and operate AI systems in production.
 
 ---
 
 ## 🎯 Our North Star
 
-**Production AI Engineering** exists to help engineering teams build AI systems that are reliable, observable, measurable, and production-ready.
+Production AI Engineering exists to help engineering teams build AI systems that are **reliable**, **observable**, **measurable**, and **production-ready**.
 
-Every guide in this repository is backed by:
+We're building this project in public—one guide, one feature, and one production pattern at a time.
 
-* Runnable code
-* Production-grade tooling
-* Architecture patterns
-* Real-world engineering practices
-* Hands-on examples
-* Dashboards, traces, and evaluation pipelines
+Our long-term goal is simple:
 
-Our goal isn't to teach AI fundamentals.
-
-Our goal is to help you build AI systems that survive production.
+> **Create the open-source reference for Production AI Engineering.**
 
 ---
 
-## Why this project exists
+## Why this project?
 
-The AI ecosystem is full of tutorials that explain how to call an LLM API or write better prompts.
+The AI ecosystem has no shortage of tutorials explaining how to call an LLM or write prompts.
 
 Production systems are different.
 
-They involve orchestration, tool calling, evaluation, observability, memory, reliability, security, cost management, and operational excellence.
+They require engineering disciplines such as:
 
-These are the engineering challenges that determine whether an AI system succeeds in production.
+* Observability
+* Evaluation
+* Reliability
+* Tool orchestration
+* Cost management
+* Memory
+* Security
+* Incident response
 
-This repository explores those challenges through practical implementations and production-inspired examples.
+These are the problems this project aims to explore through practical examples, reference implementations, and engineering guides.
 
 ---
 
-## What this repository is **NOT**
+## What this project is **NOT**
 
 This repository is **not**:
 
 * ❌ Another prompt engineering tutorial
 * ❌ A collection of disconnected AI demos
-* ❌ Framework-specific documentation
+* ❌ A framework competing with existing ecosystems
 * ❌ A benchmark repository
-* ❌ A list of AI tools
 
-Instead, it focuses on the engineering discipline required to operate AI systems in production.
+Instead, it's an engineering-first project focused on operating AI systems in production.
 
 ---
 
-## Philosophy
+## Our Philosophy
 
-Every guide in this repository follows the same engineering lifecycle.
+Every topic in this repository follows the same engineering lifecycle.
 
 ```text
 Build
@@ -67,106 +66,40 @@ Evaluate
 Operate
 ```
 
-### 🏗 Build
+Everything we publish should help answer one of these questions:
 
-Design and implement production-ready AI systems.
-
-Examples include:
-
-* Agent runtimes
-* Harness engineering
-* Tool orchestration
-* Retrieval pipelines
-* Memory architectures
-* Prompt management
-* Multi-agent workflows
-
----
-
-### 📊 Observe
-
-Understand exactly what your AI system is doing.
-
-Topics include:
-
-* OpenTelemetry
-* Distributed tracing
-* Metrics
-* Logging
-* Token accounting
-* Cost monitoring
-* Prompt versioning
-* AI-specific SLIs and SLOs
-
----
-
-### 🧪 Evaluate
-
-Measure quality continuously.
-
-Topics include:
-
-* Evaluation harnesses
-* Golden datasets
-* Regression testing
-* LLM-as-a-Judge
-* Continuous evaluation
-* Human feedback loops
-
----
-
-### 🚀 Operate
-
-Run AI systems with confidence.
-
-Topics include:
-
-* Reliability engineering
-* Guardrails
-* Security
-* Scaling
-* Incident response
-* Chaos engineering
-* Production runbooks
+* **How do we build it?**
+* **How do we observe it?**
+* **How do we know it's working?**
+* **How do we operate it reliably?**
 
 ---
 
 ## Project Atlas
 
-This repository evolves around a single production-style reference application called **Project Atlas**.
+Project Atlas is the reference application that evolves alongside this repository.
 
-Instead of isolated code samples, every guide extends the same system.
+Rather than creating isolated demos, we'll continuously improve a single production-style AI system as new guides are published.
 
-As the project evolves, Atlas will gradually grow into a fully instrumented production AI platform featuring:
-
-* AI Agent Runtime
-* OpenTelemetry instrumentation
-* Distributed tracing
-* Evaluation pipelines
-* Production dashboards
-* Alerting
-* Cost analytics
-* Memory systems
-* CI/CD quality gates
-* Reliability patterns
-
-Every guide adds a new capability to the platform.
+Each guide will introduce new capabilities to Atlas—from observability and evaluation to reliability and operational tooling.
 
 ---
 
-## Current Milestone
+## 🚧 Project Status
 
-We're currently building the foundation of the platform.
+Production AI Engineering is currently in its early stages.
 
-Current focus:
+We're intentionally building the project incrementally and documenting the journey in public.
 
+### Current Focus
+
+* Repository Foundation
 * Production AI Runtime
 * OpenTelemetry Instrumentation
 * AI Agent Observability
 * Evaluation Harness
-* Production Dashboards
 
-The long-term vision is documented in **ROADMAP.md**.
+See **ROADMAP.md** for upcoming milestones.
 
 ---
 
@@ -177,53 +110,34 @@ production-ai-engineering/
 
 ├── apps/
 ├── packages/
+├── docs/
+├── examples/
 ├── dashboards/
 ├── infrastructure/
-├── docs/
 ├── datasets/
-├── examples/
 └── .github/
 ```
 
 ---
 
-## Technology Stack
+## Technology
 
-The project is intentionally built using technologies commonly adopted in production environments.
+The repository will evolve over time.
 
-### Runtime
+Current development focuses on:
 
 * Node.js
 * TypeScript
-
-### AI
-
-* OpenAI-compatible APIs
-* Model Context Protocol (MCP)
-* LangGraph (where appropriate)
-
-### Observability
-
 * OpenTelemetry
-* Langfuse
-* Helicone
-* Prometheus
-* Grafana
-* Datadog
-* AWS CloudWatch
-
-### Infrastructure
-
 * Docker
-* GitHub Actions
-* Terraform
-* AWS
+
+As the project grows, we'll introduce additional production tooling where it provides real engineering value.
 
 ---
 
 ## Who is this for?
 
-Production AI Engineering is intended for:
+This project is intended for engineers building AI systems in production, including:
 
 * Software Engineers
 * Platform Engineers
@@ -232,23 +146,15 @@ Production AI Engineering is intended for:
 * Site Reliability Engineers
 * Engineering Leaders
 
-If you're responsible for building, deploying, or operating AI systems, this repository is for you.
+If you're interested in the engineering behind production AI systems—not just model APIs—you're in the right place.
 
 ---
 
 ## Contributing
 
-This project is open source and community driven.
+Production AI Engineering is an open-source learning project.
 
-Contributions are welcome in the form of:
-
-* Documentation improvements
-* Production patterns
-* Examples
-* Dashboards
-* Evaluation datasets
-* Tool integrations
-* Architecture discussions
+Whether you'd like to improve documentation, share production patterns, contribute code, or discuss architecture, contributions are welcome.
 
 Please read **CONTRIBUTING.md** before opening a pull request.
 
@@ -260,14 +166,10 @@ This project is licensed under the Apache 2.0 License.
 
 ---
 
-## The Journey Starts Here
+## Join the Journey
 
-Production AI Engineering is not a finished framework.
+This repository won't be built overnight.
 
-It's a living engineering handbook.
+Neither are production AI systems.
 
-Every guide, every example, and every release moves us one step closer to answering a simple question:
-
-> **How do we build AI systems that are truly production-ready?**
-
-If you're interested in that journey, welcome aboard.
+If you're interested in learning, experimenting, and sharing engineering practices for production AI, we'd love to have you along for the journey.
